@@ -146,7 +146,7 @@ def draw_bouquet(count):
     return svg_code
 
 # ---------------- UI ----------------
-st.title("🌹 How long will you go , Sarah !")
+st.title(" ")
 
 components.html(
     draw_bouquet(st.session_state.rose_count),
@@ -167,4 +167,5 @@ with col2:
         st.success("So much love! 💖")
         if st.button("Start Over", use_container_width=True):
             st.session_state.rose_count = 1
+
 
